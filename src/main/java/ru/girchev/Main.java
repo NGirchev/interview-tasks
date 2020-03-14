@@ -18,6 +18,7 @@ public class Main {
 //    4. Написать unit тест для проверки результатов
 
 
+    /* Здесь просто печатается результат выполнения */
     public static void main(String[] args) throws Exception {
         ServiceProvider.createServiceInstances(TestAnalyzer.class)
                 .stream()
