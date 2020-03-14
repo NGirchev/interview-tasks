@@ -10,9 +10,8 @@ import ru.girchev.component.ServiceProvider;
 @SuppressWarnings("all")
 public class Main {
 
-//    Дано:
-//    Текст в SimpleStringDataProvider (ниже).
-//    Нужно написать реализацию интерфейса TestTaskAnalyzer, в которой подсчитываются:
+//    Дано: Текст в SimpleStringDataProvider (ниже).
+//    Нужно написать реализацию интерфейса TestAnalyzer, в которой подсчитываются:
 //    1. Все слова в тексте.
 //    2. Сколько раз повторяется буква "о"
 //    3. Сколько всего строк в тексте.
@@ -20,9 +19,9 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        ServiceProvider.createServiceInstances(TestTaskAnalyzer.class)
+        ServiceProvider.createServiceInstances(TestAnalyzer.class)
                 .stream()
-                .map(testTaskAnalyzer -> testTaskAnalyzer.analyze(new SimpleStringDataProvider().getData()))
+                .map(testAnalyzer -> testAnalyzer.analyze(new SimpleStringDataProvider().getData()))
                 .forEach(System.out::println);
     }
 
