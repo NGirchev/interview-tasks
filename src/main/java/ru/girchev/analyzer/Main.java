@@ -1,7 +1,4 @@
-package ru.girchev;
-
-import ru.girchev.component.DataProvider;
-import ru.girchev.component.ServiceProvider;
+package ru.girchev.analyzer;
 
 /**
  * @author Girchev N.A.

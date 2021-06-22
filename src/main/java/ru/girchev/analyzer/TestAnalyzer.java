@@ -1,4 +1,4 @@
-package ru.girchev;
+package ru.girchev.analyzer;
 
 /**
  * @author Girchev N.A.

@@ -1,4 +1,4 @@
-package ru.girchev.component;
+package ru.girchev.analyzer;
 
 import org.reflections.Reflections;
 
